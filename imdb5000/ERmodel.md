@@ -7,9 +7,9 @@ erDiagram
     }
 
     casts {
-        movie_id int
+        movie_id int FK
         character string
-        credit_id string
+        credit_id string PK
         actor_id int FK
         order int
     }
@@ -21,8 +21,8 @@ erDiagram
     }
 
     crews {
-        movie_id int
-        credit_id sting
+        movie_id int FK
+        credit_id sting PK
         department string
         worker_id int FK
         job string 
@@ -34,7 +34,7 @@ erDiagram
     }
 
     genres {
-        movie_id int
+        movie_id int FK
         genre_id int FK
     }
 
@@ -44,7 +44,7 @@ erDiagram
     }
 
     keywords {
-        movie_id int
+        movie_id int FK
         keyword_id int FK
     }
 
@@ -54,7 +54,7 @@ erDiagram
     }
 
     production_companies {
-        movie_id int
+        movie_id int FK
         production_company_id int FK
     }
 
@@ -64,7 +64,7 @@ erDiagram
     }
 
     production_countries {
-        movie_id int
+        movie_id int FK
         iso_3166_1 string FK
     }
     
@@ -74,7 +74,7 @@ erDiagram
     }
 
     spoken_languages {
-        movie_id int
+        movie_id int FK
         iso_639_1 string FK
     }
 
